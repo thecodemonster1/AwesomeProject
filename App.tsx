@@ -5,7 +5,8 @@
  * @format
  */
 
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -24,6 +25,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+// import styles from './styles.js';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
